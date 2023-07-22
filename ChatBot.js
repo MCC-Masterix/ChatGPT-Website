@@ -18,7 +18,7 @@ const userMessage = document.getElementById('userMessage').value;
 appendMessage(userMessage, 'user');
 
 const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-const apiKey = document.getElementById('apikeyMessage');
+const apiKey = document.getElementById('apikeyMessage').value;
 
 try {
 const response = await fetch(apiUrl, {
