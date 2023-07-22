@@ -1,0 +1,125 @@
+html{
+    font-family:System-ui;
+    overflow: hidden;
+}
+body{
+background: linear-gradient(to bottom, #585858, #222222);
+backdrop-filter: blur(10px);
+font-family: 'Audiowide', cursive;
+height: 100vh;
+margin: 0;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  user-select: none;
+  margin-top: 25px;
+  animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+  0%, 100% { color: rgb(175, 175, 175); }
+  25% { color: #FF0000; }
+  50% { color: #00FF00; }
+  75% { color: #0000FF; }
+}
+::-webkit-scrollbar{
+    background:#525252;
+    border-radius: 10px;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:#c4c4c4;
+    border-radius: 10px;
+    width:10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#797979; 
+    border-radius: 10px;
+    width:10px;
+}
+.range {
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background: #585858;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    z-index: 999;
+    border-radius:8px;
+    top:0px;
+  }
+  
+  .range:hover {
+    opacity: 1;
+    border-radius:8px;
+  }
+  
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #252525;
+    border-radius:8px;
+    cursor: pointer;
+  }
+  
+  .range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #252525;
+    cursor: pointer;
+    border-radius:8px;
+  }
+.chatbox{
+    border:1px #888 solid;
+    backdrop-filter: blur(10px);
+color:rgb(235, 235, 235);
+font-size: 20px;
+border-radius:8px;
+padding:10px;
+bottom:60px;
+width:98%;
+overflow: auto;
+height:80%;
+}
+input{
+    position:absolute;
+    bottom:50px;
+    border:none;
+    border-radius:8px;
+    padding-left:10px;
+    width:90%;
+    height:35px;
+    font-size:20px;
+background:#474747;
+color:#d7d7d7;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease;
+}
+input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+button{
+    position:absolute;
+    bottom:50px;
+    right:10px;
+    float:right;
+    height:35px;
+    border-radius:8px;
+    background:#1f1f1f;
+    color:#fff;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    border:none;
+    border:1px #474747 solid;
+    outline: none;
+}
+button:hover {
+  background-color: #363636;
+}
